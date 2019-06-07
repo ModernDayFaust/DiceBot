@@ -32,7 +32,7 @@ async def on_roll(command_body, channel, requester):
 
 # GLOBALS
 config = read_config(sys.argv[1] if len(sys.argv) > 1 else 'config.json')
-valid_commands = {'/roll' : on_roll, '/' : on_roll} # MAKE SURE THE SHORTCUT / COMMAND IS THE LAST ONE!
+valid_commands = {'/ffg' : on_ffg, '/roll' : on_roll, '/' : on_roll} # MAKE SURE THE SHORTCUT / COMMAND IS THE LAST ONE!
 
 # DISCORD EVENT HANDLING
 @client.event
